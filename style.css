@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.sky {
+  height: 25%;
+  background-color: skyblue;
+}
+
+.grass {
+  height: 25%;
+  background-color: lightgreen;
+}
+
+.road {
+  height: 50%;
+  background-color: lightgray;
+  border-top: 10px solid grey;
+}
+
+.lines {
+  height: 0px;
+  border: 5px dashed white;
+  top: 50%;
+  position: relative;
+}
+
+.car {
+  height: 150px;
+  position: relative;
+  top: 50px;
+  left: 0;
+  animation: driveForward 1.5s;
+  animation-fill-mode: forwards;
+}
+
+/* Write a keyframe to drive him forward
+
+*/
+
+@keyframes driveForward {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(1500px);
+  }
+}
